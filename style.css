@@ -1,0 +1,413 @@
+/* Reset de estilos padrões indesejados */
+
+html {
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+}
+
+body, h1, h2, p, ul, li, a {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: 'Nunito', Helvetica, Arial, sans-serif;
+    color: #222;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* Fim do reset de estilos padrões indesejados */
+
+/* Superinfo */
+
+.superinfo-bg {
+    background-color: #122ab2;
+    color: #fff;
+}
+
+.superinfo {
+    max-width: 96rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.6rem;
+    flex-wrap: wrap;
+    padding-top: 1rem;
+}
+
+.superinfo p, .superinfo  a {
+    margin: 0 1rem 1rem 1rem;
+}
+
+.superinfo a {
+    color: #fff;
+}
+
+/* Menu */
+
+.menu-bg {
+    background-color: #2c70ff;
+}
+
+.menu {
+    max-width: 96rem;
+    margin: 0 auto;
+    padding: 1.5rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu a {
+    color: #fff;
+}
+
+.menu-logo a{
+    font-size: 3.6rem;
+    margin: 0 1rem;
+}
+
+.menu-nav  ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.menu-nav a{
+    font-size: 2rem;
+    display: block;
+    padding: 1rem;
+}
+
+.menu-nav a:hover {
+    color: #122ab2;
+}
+
+/* Introducao */
+
+.introducao {
+    font-size: 4.8rem;
+    line-height: 1;
+    max-width: 96rem;
+    margin: 0 auto;
+    padding: 6rem  1rem;
+}
+
+/* Sobre */
+
+.sobre {
+    border-top: 0.2rem solid #2c70ff;
+    border-bottom: 0.2rem solid #2c70ff;
+    max-width: 96rem;
+    margin: 0 auto;
+    padding: 6rem 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sobre-info {
+    flex: 2 1 30rem;
+    margin: 0 1rem;
+}
+
+.sobre-img {
+    flex: 1 1 16rem;
+    margin: 0 1rem;
+}
+
+.sobre-info h1 {
+    font-size: 4.8rem;
+    margin-bottom: .5em;
+}
+
+.sobre-info p {
+    font-size: 1.6rem;
+    line-height: 1.4;
+    margin-bottom: 1em;
+    color: #7c7c7c;
+}
+
+/* Produtos */
+
+.produtos {
+    max-width: 96rem;
+    margin: 6rem auto;
+}
+
+.produtos h1 {
+    font-size: 4.8rem;
+    margin: 0 1rem 1rem 6rem;
+}
+
+.produtos-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+}
+
+.produtos-item {
+    flex: 1 1 17.5rem;
+    margin: 1rem;
+}
+
+.produtos-item h2 {
+    font-size: 4.8rem;
+    color: #a4a4a4;
+    background-color: #f7f7f7;
+    padding: 6rem 2rem;
+}
+
+.purple {
+    border-top:0.8rem solid #ae81ff;
+}
+
+.pink {
+    border-top:0.8rem solid #f9265e;
+}
+
+.blue {
+    border-top:0.8rem solid #66d9eb;
+}
+
+/* Preços */
+
+.preco {
+    background: #f7f7f7;
+    padding: 6rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+}
+
+.preco-item {
+    flex: 1 1 26rem;
+    border: 0.4rem solid #fff;
+    padding: 2rem;
+    margin: 1rem;
+}
+
+.preco-item h2 {
+    font-size: 4.8rem;
+    color: #a4a4a4;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.preco-item span {
+    max-width: 30rem;
+    margin: 2rem auto;
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    font-size: 3em;
+    padding: 1rem 0 0.5rem 0;
+    border-top: 0.4rem solid #fff;
+    border-bottom: 0.4rem solid #fff;
+}
+
+.preco-item sup {
+    font-size: 2rem;
+}
+
+.preco-item li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.preco-item ul {
+    max-width: 30rem;
+    margin: 2rem auto;
+    font-size: 1.6rem;
+    line-height: 1;
+    font-style: italic;
+    color: #7c7c7c;
+}
+
+.preco-item li::after {
+    content: '';
+    display: block;
+    width: 0.6rem;
+    height: 0.6rem;
+    border-radius: 50%;
+    background-color: #2c70ff;
+}
+
+.preco-item a {
+    max-width: 30rem;
+    display: block;
+    margin: 2rem auto;
+    border: 0.4rem solid;
+    color: #222;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 3.6rem;
+    padding: 1.5rem 0;
+    text-align: center;
+}
+
+@media (max-width: 800px) {
+    .preco {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .preco .preco-item:nth-child(3) {
+        order: -2;
+    }
+    .preco .preco-item:nth-child(2) {
+        order: -1;
+    }
+}
+
+/* Qualidade */
+
+.qualidade {
+    max-width: 96rem;
+    margin: 6rem auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.qualidade-item {
+    flex: 1 1 30rem;
+    margin: 2rem 1rem;
+}
+
+.qualidade-item h2 {
+    font-size: 3.6rem;
+    color: #a4a4a4;
+    margin-bottom: 2rem;
+}
+
+.qualidade-item h2::before {
+    content: '';
+    display: inline-block;
+    width: 0.8rem;
+    height: 3rem;
+    margin-right: 1rem;
+}
+
+/* 3n+1significa que vai estilizar sempre o terceiro item a partir do primeiro
+sendo, que se houverem mais itens ele ia continuar a expressão mantendo uma lógica
+*/
+.qualidade-item:nth-of-type(3n+1) h2::before {
+    background: #ae81ff;
+}
+
+.qualidade-item:nth-of-type(3n+2) h2::before {
+    background: #f9265e;
+}
+
+.qualidade-item:nth-of-type(3n+3) h2::before {
+    background: #66d9eb;
+}
+
+.qualidade-item p {
+    font-size: 1.6rem;
+    line-height: 1.4;
+    color: #7c7c7c;
+    font-weight: 500;
+}
+
+/* Newsletter */
+
+.newsletter {
+    background: #f7f7f7;
+    padding: 6rem calc((100% - 96rem) / 2);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.newsletter-info {
+    flex: 1 1 20rem;
+    margin: 0 1rem;
+}
+
+.newsletter-info h1 {
+    font-size: 4.8rem;
+    color: #a4a4a4;
+}
+
+.newsletter-info p {
+    font-size: 2rem;
+    font-style: italic;
+    max-width: 23rem;
+    color: #7c7c7c;
+    margin-bottom: 1rem;
+}
+
+.newsletter-form {
+    flex: 2 1 26rem;
+    margin: 0 1rem;
+    align-self: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.newsletter-form input {
+    flex: 3 1 26rem;
+    font-size: 2rem;
+    color: #7c7c7c;
+    font-style: italic;
+    font-family: 'Nunito', Helvetica, Sans-serif;
+    border: 0.4rem solid #2c70ff;
+    background: transparent;
+    padding: 1.5rem 1rem;
+    margin: 0px;
+}
+
+.newsletter-form button {
+    flex: 1 1 26rem;
+    border: 0.4rem solid #2c70ff;
+    font-family: 'Nunito', Helvetica, Sans-serif;
+    font-size: 3.6rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    background: #2c70ff;
+    color: #fff;
+    margin: 0;
+    cursor: pointer;
+    border: none;
+    padding: 1.5rem 1rem;
+}
+
+@media (max-width: 600px) {
+    .newsletter-form button {
+        font-size: 2.4rem;
+    }
+}
+
+/* Footer */
+
+.footer  {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background: #2c70ff;
+    height: 20rem;
+}
+
+.footer p {
+    flex: 1 1 26rem;
+    text-align: center;
+    font-size: 3.6rem;
+    color: #fff;
+}
